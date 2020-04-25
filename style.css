@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400|Poppins:400');
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #1b1b1b;
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 56px;
+}
+
+.container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+}
+
+.tagline {
+  padding: 30px;
+  background: white;
+  position: relative;
+}
+
+.tagline > h2 {
+  font-size: 48px;
+}
+
+.shape-circle-red {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  border-radius: 50%;
+  background: #b92121;
+  top: 0px;
+  z-index: 1;
+  mix-blend-mode: multiply;
+  mix-blend-mode: lighten;
+  left: 10px;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  mix-blend-mode: overlay;
+  background: #b92121;
+}
+
+.button-container {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  flex: 1;
+  cursor: pointer;
+}
+
+label:nth-child(1) {
+  background: #b92121;
+}
+
+label:nth-child(2) {
+  background: #007b00;
+}
+
+label:nth-child(3) {
+  background: #3f51b5;
+}
+
+label:nth-child(4) {
+  background: #673ab7;
+}
+
+input[type='radio'] {
+  margin: 0;
+  visibility: hidden;
+}
